@@ -1,4 +1,4 @@
-package recetasdechus;
+package recetasdechus.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -13,8 +13,11 @@ public class Recipe {
 	private long id;
     @Column(name = "name")
 	private String name;
+    @Column(name = "elaboration")
 	private String elaboration;
+	@Column(name = "thumbnail")
 	private String thumbnail;
+	@Column(name = "photo")
 	private String photo;
 
 	@ManyToMany(mappedBy = "recipes")
