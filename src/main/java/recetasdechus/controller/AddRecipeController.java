@@ -59,11 +59,9 @@ public class AddRecipeController {
     }
 
     @PostMapping("/processForm")
-    public ModelAndView processForm(@ModelAttribute(name = "recipe") Recipe recipe){
-
+    public void processForm(@ModelAttribute(name = "recipe") Recipe recipe){
         recipeService.saveRecipe(recipe);
-
-        return new ModelAndView(ADD_RECIPE_RESULT);
+        printForm();
     }
 
 }

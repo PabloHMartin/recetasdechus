@@ -14,7 +14,4 @@ import java.util.List;
 @Qualifier("recipeJpaRepository")
 public interface RecipeJpaRepository extends JpaRepository<Recipe, Serializable>{
 
-    List<Recipe> findAll();
-    void saveRecipe(Recipe recipe);
-
 }

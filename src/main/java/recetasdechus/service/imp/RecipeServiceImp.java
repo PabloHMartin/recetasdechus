@@ -18,7 +18,7 @@ public class RecipeServiceImp implements RecipeService{
 
     @Override
     public void saveRecipe(Recipe recipe) {
-        recipeJpaRepository.saveRecipe(recipe);
+        recipeJpaRepository.save(recipe);
 
     }
 }
